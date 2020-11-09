@@ -11,6 +11,11 @@ Via Composer
 
 ``` bash
 $ composer require masoud5070/api-routes
+```  
+If you do not run Laravel 5.5 (or higher), then add the service provider in `config/app.php`:
+
+```php
+Masoud5070\ApiRoutes\ApiRoutesServiceProvider,
 ```
 
 ## Usage
@@ -18,7 +23,10 @@ use ```
     /test
     ``` uri to get information by ``` GET ``` method and with
     ``` POST ``` method you should set ``` name ``` field then send request.  
-     for change default configuration you can publish config file by command below:  
+    
+    
+## Configuration
+for change default configuration you can publish config file by command below:  
 ``` bash
 $ php artisan vendor:publish --tag=config
 ```

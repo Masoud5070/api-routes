@@ -33,10 +33,7 @@
         "laravel": {
             "providers": [
                 "Masoud5070\\ApiRoutes\\ApiRoutesServiceProvider"
-            ],
-            "aliases": {
-                "ApiRoutes": "Masoud5070\\ApiRoutes\\Facades\\ApiRoutes"
-            }
+            ]
         }
     }
 }
