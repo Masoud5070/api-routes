@@ -1,0 +1,41 @@
+{
+    "name": "masoud5070/api-routes",
+    "description": "set api routes to laravel api file",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Masoud Tajer",
+            "email": "masoudtajer121@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/masoud5070/api-routes",
+    "keywords": ["Laravel", "ApiRoutes"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Masoud5070\\ApiRoutes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Masoud5070\\ApiRoutes\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Masoud5070\\ApiRoutes\\ApiRoutesServiceProvider"
+            ],
+            "aliases": {
+                "ApiRoutes": "Masoud5070\\ApiRoutes\\Facades\\ApiRoutes"
+            }
+        }
+    }
+}
